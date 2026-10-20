@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 150px;
+    height: 100px;
+}
+
+.section1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(background.png);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+}
+
+.section1::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    height: 40px;
+    width: 100%;
+    background-color: black;
+
+    /* border-top: 4px solid #a11b67;
+    
+    border-radius: 50% 50% 0 0; */
+
+    background:
+        radial-gradient(50% 500% at 50% -420%,
+            rgba(50, 70, 180, 0.55) 85%,
+            rgba(0, 0, 0, 0.1) 100%),
+        #000;
+
+    border-top: 3px solid #d41467;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    gap: 500px;
+}
+
+.rightmenu {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+}
+
+.rightmenu select {
+    color: white;
+    background-color: black;
+    padding: 8px 15px;
+    border: 1px solid #b3b3b3;
+    border-radius: 6px;
+    font-weight: bold;
+
+}
+
+.rightmenu button {
+    color: white;
+    background-color: crimson;
+    padding: 8px 10px;
+    border: 1px solid crimson;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.content {
+    margin-top: 150px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content h1 {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.content h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+.content input {
+    background: transparent;
+    border: 1px solid #777;
+    font-size: 16px;
+    padding: 16px 160px;
+    border-radius: 4px;
+    padding-left: 20px;
+}
+
+.content button {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #E50914;
+    border: 1px solid #E50914;
+    padding: 14px 35px;
+    border-radius: 4px;
+}
+
+.content span {
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.section2 {
+    background-color: black;
+    /* height: 290vh; */
+    height: fit-content;
+}
+
+
+.section2 h1 {
+    font-size: 25px;
+    margin-left: 180px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 70px;
+}
+
+.banner {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+}
+
+.banner img {
+    width: 180px;
+    height: 250px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+.banner span {
+    color: black;
+    font-size: 90px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: 2px rgb(200, 190, 190);
+    position: absolute;
+    bottom: 0;
+    margin-left: -15px;
+}
+
+.about {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 70px;
+}
+
+.about h2 {
+    padding-top: 30px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    margin-left: 150px;
+}
+
+.about p {
+    padding-top: 20px;
+    color: #B8B7C3;
+}
+
+.about h3 {
+    font-size: 24px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+    width: 1200px;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #1D1A31;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #1d1d3d, #201325);
+    padding: 26px 16px;
+    height: 200px;
+    position: relative;
+}
+
+.card img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.question {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.question h2 {
+    margin-left: 120px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.details {
+    margin-bottom: 8px;
+}
+.box {
+    border: 1px solid #2D2D2D;
+    background-color: #2D2D2D;
+    height: 54px;
+    margin: 10px 150px 0px 150px;
+    padding-left: 30px;
+    padding-top: 27px;
+    list-style: none;
+    position: relative;
+}
+
+.plus {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    font-size: 60px;
+
+}
+.answer {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 25px;
+    margin-top: 2px;
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 1px 150px 6px 150px;
+}
+
+details[open] .plus {
+    /* font-size: 0; */
+    visibility: hidden;
+}
+
+details[open] .plus::after {
+    content: "×";
+    /* font-size: 60px; */
+    visibility: visible;
+}
+
+.mail {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 80px;
+}
+
+.mail h3 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.mail input {
+    background: #111111;
+    border: 1px solid #777;
+    font-size: 16px;
+    padding: 16px 330px;
+    border-radius: 4px;
+    padding-left: 20px;
+}
+
+.mail button {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #E50914;
+    border: 1px solid #E50914;
+    padding: 14px 43px;
+    border-radius: 4px;
+}
+
+.mail span {
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.foot {
+    color: #b3b3b3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.foot h4 {
+    margin: 70px 0px 40px 150px;
+    font-size: 16px;
+
+}
+
+.list {
+    text-decoration: underline;
+    display: flex;
+    gap: 185px;
+    margin-left: 150px;
+}
+
+.list ul {
+    list-style: none;
+}
+
+.list li {
+    margin-bottom: 17px;
+    font-size: 14px;
+}
+
+.fmenu select {
+    color: white;
+    background-color: #111111;
+    padding: 8px 15px;
+    border: 1px solid #b3b3b3;
+    border-radius: 6px;
+    font-weight: bold;
+    margin: 60px 20px 0px 150px;
+    padding: 8px 14px;
+}
+
+.foot h3 {
+    margin: 40px 0px 40px 150px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.foot p {
+    margin-left: 150px;
+    margin-top: 20px;
+    padding-bottom: 90px;
+    font-size: 13px;
+
+}
